@@ -6,13 +6,13 @@ import (
 	"github.com/getsentry/sentry-go"
 	"github.com/sirupsen/logrus"
 
-	"github.com/4O4-Not-F0und/rss-exporter/collectors"
-	"github.com/4O4-Not-F0und/rss-exporter/connectors"
+	"github.com/mbrown007/monitoring-rss-exporter/tree/main/collectors"
+	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
 )
 
 func main() {
 	// Instantiate the exporter with the new HTTP connector
-	e, err := collectors.NewRssExporter(connectors.NewHTTPConnector())
+	e, err := collectors.RssExporter(connectors.HTTPConnector())
 	if err != nil {
 		logrus.Fatal(err)
 	}

@@ -1,4 +1,4 @@
-module github.com/4O4-Not-F0und/rss-exporter
+module github.com/mbrown007/monitoring-rss-exporter
 
 go 1.24.3
 

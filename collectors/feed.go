@@ -9,7 +9,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	maas "github.com/sabio-engineering-product/monitoring-maas"
 
-	"github.com/4O4-Not-F0und/rss-exporter/connectors"
+	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
 )
 
 // NewFeedCollector creates a scheduled scraper for a single RSS feed.

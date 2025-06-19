@@ -1,7 +1,7 @@
 package connectors
 
 import (
-	fetcher "github.com/4O4-Not-F0und/rss-exporter/internal/fetcher"
+	fetcher "github.com/mbrown007/monitoring-rss-exporter/tree/main/internal/fetcher"
 	"github.com/sirupsen/logrus"
 )
 

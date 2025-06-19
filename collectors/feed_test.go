@@ -8,7 +8,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/4O4-Not-F0und/rss-exporter/connectors"
+	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
 	"github.com/alecthomas/kingpin/v2"
 	maas "github.com/sabio-engineering-product/monitoring-maas"
 )
