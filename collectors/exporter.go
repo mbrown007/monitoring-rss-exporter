@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/alecthomas/kingpin/v2"
-	maas "github.com/sabio-engineering-product/monitoring-maas"
+	maas "./monitoring-maas"
 	"gopkg.in/yaml.v3"
 )
 

@@ -44,4 +44,4 @@ require (
 	google.golang.org/protobuf v1.36.5 // indirect
 )
 
-replace github.com/sabio-engineering-product/monitoring-maas => ./monitoring-maas
+replace github.com/sabio-engineering-product/monitoring-maas => c:/GitHub/monitoring-rss-exporter/monitoring-maas

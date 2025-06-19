@@ -7,7 +7,7 @@ import (
 	"github.com/alecthomas/kingpin/v2"
 	"github.com/mmcdole/gofeed"
 	"github.com/prometheus/client_golang/prometheus"
-	maas "github.com/sabio-engineering-product/monitoring-maas"
+	maas "./monitoring-maas"
 
 	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
 )

@@ -10,7 +10,7 @@ import (
 
 	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
 	"github.com/alecthomas/kingpin/v2"
-	maas "github.com/sabio-engineering-product/monitoring-maas"
+	maas "./monitoring-maas"
 )
 
 type FeedTestSuite struct {
