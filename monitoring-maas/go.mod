@@ -1,4 +1,4 @@
-module github.com/sabio-engineering-product/monitoring-maas
+module github.com/mbrown007/monitoring-rss-exporter/monitoring-maas
 
 go 1.20
 
