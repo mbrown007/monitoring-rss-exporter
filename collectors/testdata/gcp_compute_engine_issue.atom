@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Google Cloud Service Health Updates</title>
+<updated>2025-06-13T10:15:00+00:00</updated>
+<link href="https://status.cloud.google.com/" rel="alternate" type="text/html"/>
+<link href="https://status.cloud.google.com/en/feed.atom" rel="self"/>
+<author>
+<name>Google Cloud</name>
+</author>
+<id>https://status.cloud.google.com/</id>
+<entry>
+<title>INVESTIGATING: Google Compute Engine experiencing elevated error rates</title>
+<link href="https://status.cloud.google.com/incidents/test123" rel="alternate" type="text/html"/>
+<id>tag:status.cloud.google.com,2025:feed:test123.update1</id>
+<updated>2025-06-13T10:15:00+00:00</updated>
+<summary type="html"><p>We are investigating reports of elevated error rates for Google Compute Engine in <strong>us-central1</strong> region. Users may experience issues with instance creation and management.</p></summary>
+</entry>
+</feed>

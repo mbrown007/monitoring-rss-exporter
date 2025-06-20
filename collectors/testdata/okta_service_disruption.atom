@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Okta Status</title>
+ <id>http://status.okta.com/services/xml/OktaTrustRSS</id>
+ <updated>2025-06-19T15:10:47.164Z</updated>
+ <author>
+  <name>Okta Status</name>
+ </author>
+ <link rel="self" href="http://status.okta.com/services/xml/OktaTrustRSS" />
+ <entry>
+  <title>Service Disruption</title>
+  <updated>2025-06-19T14:30:00.000Z</updated>
+  <link href="https://status.okta.com/#incident/a9CKZ000000oLkp2AE" />
+  <id>https://www.salesforce.com/a9CKZ000000oLkp2AE</id>
+  <content type="text">Okta Engineering is investigating reports of authentication failures affecting customers in US Cell 1, US Cell 3, and EMEA Cell 9. Users may experience difficulty logging in to applications. We are actively working to resolve this issue.</content>
+ </entry>
+</feed>

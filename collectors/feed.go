@@ -9,20 +9,19 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	maas "github.com/mbrown007/monitoring-rss-exporter/monitoring-maas"
 
-	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
+	"github.com/mbrown007/monitoring-rss-exporter/connectors"
 )
 
 // NewFeedCollector creates a scheduled scraper for a single RSS feed.
 func NewFeedCollector(app *kingpin.Application, serviceConfig maas.ServiceFeed) *maas.ScheduledScraper {
-	maas.WithDescription(app, "service_status", "Current service status", []string{"service", "customer", "state"})
-	maas.WithDescription(app, "service_issue_info", "Details for active service issues", []string{"service", "customer", "service_name", "region", "title", "link", "guid"})
-
 	return maas.NewScheduledScraper(
 		serviceConfig.Name,
 		NewFeedScraper(serviceConfig),
 		maas.WithSchedule(maas.NewSchedule(
 			maas.WithFrequency(time.Duration(serviceConfig.Interval)*time.Second),
 		)),
+		maas.WithDescription(app, "service_status", "Current service status", []string{"service", "customer", "state"}),
+		maas.WithDescription(app, "service_issue_info", "Details for active service issues", []string{"service", "customer", "service_name", "region", "title", "link", "guid"}),
 	)
 }
 

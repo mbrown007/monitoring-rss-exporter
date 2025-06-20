@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Google Cloud Service Health Updates</title>
+<updated>2025-06-13T12:30:00+00:00</updated>
+<link href="https://status.cloud.google.com/" rel="alternate" type="text/html"/>
+<link href="https://status.cloud.google.com/en/feed.atom" rel="self"/>
+<author>
+<name>Google Cloud</name>
+</author>
+<id>https://status.cloud.google.com/</id>
+<entry>
+<title>UPDATE: Multiple GCP products are experiencing Service disruption</title>
+<link href="https://status.cloud.google.com/incidents/multi456" rel="alternate" type="text/html"/>
+<id>tag:status.cloud.google.com,2025:feed:multi456.update2</id>
+<updated>2025-06-13T12:30:00+00:00</updated>
+<summary type="html"><p><strong>Update:</strong> We continue to investigate service disruption affecting <strong>Cloud Storage</strong>, <strong>BigQuery</strong>, and <strong>Cloud SQL</strong> in regions <strong>us-west1</strong>, <strong>europe-west1</strong>, and <strong>asia-southeast1</strong>. Users may experience elevated latency and error rates.</p></summary>
+</entry>
+</feed>

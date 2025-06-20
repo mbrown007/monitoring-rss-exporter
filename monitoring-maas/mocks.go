@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/robfig/cron/v3"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 )
 
 type MockScraper struct{}

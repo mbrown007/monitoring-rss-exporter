@@ -18,11 +18,22 @@ func extractServiceStatus(item *gofeed.Item) (service string, state string, acti
 	combined := strings.Join([]string{title, summary, content}, " ")
 
 	switch {
-	case strings.Contains(combined, "STATUS: RESOLVED") || strings.Contains(title, "RESOLVED"):
+	case strings.Contains(combined, "STATUS: RESOLVED") || 
+		 strings.Contains(title, "RESOLVED") ||
+		 strings.Contains(combined, "RESOLVED -") ||
+		 strings.Contains(combined, "RESOLVED:") ||
+		 strings.Contains(combined, "<STRONG>RESOLVED</STRONG>") ||
+		 strings.Contains(combined, "THIS INCIDENT HAS BEEN RESOLVED"):
 		state = "resolved"
-	case strings.Contains(combined, "OUTAGE"):
+	case strings.Contains(combined, "OUTAGE") || strings.Contains(combined, "SERVICE_OUTAGE"):
 		state = "outage"
-	case strings.Contains(combined, "SERVICE ISSUE") || strings.Contains(combined, "SERVICE IMPACT"):
+	case strings.Contains(combined, "SERVICE ISSUE") || 
+		 strings.Contains(combined, "SERVICE IMPACT") ||
+		 strings.Contains(combined, "SERVICE_DISRUPTION") ||
+		 strings.Contains(combined, "ELEVATED ERRORS") ||
+		 strings.Contains(combined, "EXPERIENCING") ||
+		 strings.Contains(combined, "INVESTIGATING") ||
+		 strings.Contains(combined, "MONITORING"):
 		state = "service_issue"
 	}
 	if state == "" {

@@ -3,7 +3,7 @@ package maas
 import (
 	"net"
 
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 )
 
 type Labeler interface {

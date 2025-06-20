@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Avaya Cloud Products Status</title>
+    <link>https://status.avayacloud.com</link>
+    <description>Updates on the status of Avaya Cloud Products</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Jun 2025 14:22:00 PDT</lastBuildDate>
+    <generator>Statuspage.io</generator>
+    <ttl>5</ttl>
+
+    <item>
+      <title>Avaya Experience Platform - Service Outage</title>
+      <link>https://status.avayacloud.com/incidents/888hk0hhs4xc</link>
+      <pubDate>Fri, 13 Jun 2025 14:22:00 PDT</pubDate>
+      <guid isPermaLink="false">https://status.avayacloud.com/incidents/888hk0hhs4xc</guid>
+      <description><![CDATA[We are investigating a service outage affecting the Avaya Experience Platform (AXP) in the North America region. Customers may experience difficulties accessing contact center services.]]></description>
+    </item>
+
+  </channel>
+</rss>

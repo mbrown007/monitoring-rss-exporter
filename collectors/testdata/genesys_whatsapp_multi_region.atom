@@ -1,0 +1,17 @@
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+<title>Genesys Cloud Status - Incident History</title>
+<updated>2025-06-19T16:20:00-04:00</updated>
+<author>
+<name>Genesys Cloud</name>
+</author>
+<link rel="alternate" type="text/html" href="https://status.mypurecloud.com"/>
+<link rel="self" type="application/atom+xml" href="https://status.mypurecloud.com/history.atom"/>
+<id>tag:status.mypurecloud.com,2005:/history</id>
+<entry>
+<title>WhatsApp Message Errors</title>
+<updated>2025-06-19T16:20:00-04:00</updated>
+<id>genesys-whatsapp-incident-002</id>
+<link href="https://status.mypurecloud.com/incident/whatsapp-002" rel="alternate" type="text/html"/>
+<content type="html"><p><strong>Update</strong> - We continue to investigate WhatsApp message delivery failures affecting <strong>Americas (US East)</strong> and <strong>Americas (Sao Paulo)</strong> regions. Users may experience delayed or failed WhatsApp message delivery to customers.</p></content>
+</entry>
+</feed>

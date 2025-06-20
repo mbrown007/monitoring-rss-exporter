@@ -1,7 +1,7 @@
 package connectors
 
 import (
-	fetcher "github.com/mbrown007/monitoring-rss-exporter/tree/main/internal/fetcher"
+	"github.com/alecthomas/kingpin/v2"
 	"github.com/sirupsen/logrus"
 )
 
@@ -22,9 +22,19 @@ type HTTPQuery struct {
 	URL string
 }
 
+// Connect implements the maas.Connector interface (no-op for HTTP)
+func (c *HTTPConnector) Connect() error {
+	return nil
+}
+
+// Flags implements the maas.Connector interface (no flags needed for HTTP)
+func (c *HTTPConnector) Flags(a *kingpin.Application) {
+	// No flags needed for HTTP connector
+}
+
 // Execute fetches the RSS feed.
 func (c *HTTPConnector) Execute(query interface{}) (interface{}, error) {
 	httpQuery := query.(HTTPQuery)
 	// Reuse existing FetchFeedWithRetry logic
-	return fetcher.FetchFeedWithRetry(httpQuery.URL, c.Logger)
+	return FetchFeedWithRetry(httpQuery.URL, c.Logger)
 }

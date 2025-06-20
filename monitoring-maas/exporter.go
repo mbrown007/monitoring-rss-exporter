@@ -19,7 +19,7 @@ import (
 	"github.com/prometheus/common/version"
 	"github.com/robfig/cron/v3"
 	log "github.com/sirupsen/logrus"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 )
 
 type Exporter struct {

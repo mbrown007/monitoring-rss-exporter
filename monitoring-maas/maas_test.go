@@ -6,9 +6,9 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/testutil"
-	maas "github.com/sabio-engineering-product/monitoring-maas"
+	maas "github.com/mbrown007/monitoring-rss-exporter/monitoring-maas"
 	"github.com/stretchr/testify/suite"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 )
 
 type MaaSTestSuite struct {

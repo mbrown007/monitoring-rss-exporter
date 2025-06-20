@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	github.com/ArthurHlt/logrusprom v0.0.0-20171215201042-24e40b226d28
+	github.com/alecthomas/kingpin/v2 v2.4.0
 	github.com/hashicorp/consul/api v1.5.0
 	github.com/hashicorp/consul/sdk v0.5.0
 	github.com/onrik/logrus v0.7.0
@@ -11,13 +12,11 @@ require (
 	github.com/prometheus/common v0.26.0
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/sirupsen/logrus v1.6.0
-	github.com/stretchr/testify v1.6.1
-	gopkg.in/alecthomas/kingpin.v2 v2.2.6
+	github.com/stretchr/testify v1.8.2
 )
 
 require (
-	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
-	github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d // indirect
+	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137 // indirect
 	github.com/armon/go-metrics v0.3.3 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
@@ -43,9 +42,10 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/procfs v0.6.0 // indirect
+	github.com/xhit/go-str2duration/v2 v2.1.0 // indirect
 	golang.org/x/net v0.0.0-20200822124328-c89045814202 // indirect
 	golang.org/x/sys v0.0.0-20210603081109-ebe580a85c40 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/protobuf v1.26.0-rc.1 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

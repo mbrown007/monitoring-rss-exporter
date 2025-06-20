@@ -42,3 +42,8 @@ services:
     provider: aws
     url: https://status.aws.amazon.com/rss/all.rss
     interval: 300
+  # Example Avaya Cloud feed
+  - name: avaya-cloud
+    provider: avaya
+    url: https://status.avayacloud.com/history.rss
+    interval: 300

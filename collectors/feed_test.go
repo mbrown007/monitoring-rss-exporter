@@ -8,7 +8,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/mbrown007/monitoring-rss-exporter/tree/main/connectors"
+	"github.com/mbrown007/monitoring-rss-exporter/connectors"
 	"github.com/alecthomas/kingpin/v2"
 	maas "github.com/mbrown007/monitoring-rss-exporter/monitoring-maas"
 )
@@ -35,6 +35,7 @@ func (s *FeedTestSuite) setupExporter(feedPath, url, name, provider string) {
 	e, err := maas.NewExporter(app, s.Connector,
 		maas.WithScheduledScrapers(NewFeedCollector(app, cfg)),
 		maas.WithLabels(&maas.MockLabels{}),
+		maas.WithArgs([]string{"--web.listen-port=0"}), // Use port 0 for testing
 	)
 	s.Require().NoError(err)
 	s.Exporter = e

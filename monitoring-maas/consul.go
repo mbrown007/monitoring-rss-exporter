@@ -6,7 +6,7 @@ import (
 
 	consul "github.com/hashicorp/consul/api"
 	log "github.com/sirupsen/logrus"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
 )
 
 type Advertiser interface {
