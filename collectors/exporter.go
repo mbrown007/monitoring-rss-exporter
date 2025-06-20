@@ -14,10 +14,6 @@ type Config struct {
 	Services []maas.ServiceFeed `yaml:"services"`
 }
 
-// RssExporter constructs a maas exporter with feed scrapers based on config.
-func RssExporter(c maas.Connector, options ...func(*maas.Exporter)) (*maas.Exporter, error) {
-	return NewRssExporter(c, options...)
-}
 
 // NewRssExporter constructs a maas exporter with feed scrapers based on config.
 func NewRssExporter(c maas.Connector, options ...func(*maas.Exporter)) (*maas.Exporter, error) {

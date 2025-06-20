@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// Instantiate the exporter with the new HTTP connector
-	e, err := collectors.RssExporter(connectors.NewHTTPConnector())
+	e, err := collectors.NewRssExporter(connectors.NewHTTPConnector())
 	if err != nil {
 		logrus.Fatal(err)
 	}

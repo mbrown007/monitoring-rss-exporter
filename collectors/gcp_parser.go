@@ -147,29 +147,3 @@ func extractGCPRegion(item *gofeed.Item) string {
 	return ""
 }
 
-// extractGCPStatus provides GCP-specific status detection
-func extractGCPStatus(item *gofeed.Item) (service string, state string, active bool) {
-	content := strings.ToUpper(item.Title + " " + item.Description + " " + item.Content)
-	
-	switch {
-	case strings.Contains(content, "RESOLVED"):
-		state = "resolved"
-	case strings.Contains(content, "SERVICE_OUTAGE") || strings.Contains(content, "OUTAGE"):
-		state = "outage"
-	case strings.Contains(content, "SERVICE_DISRUPTION") || 
-		 strings.Contains(content, "SERVICE IMPACT") ||
-		 strings.Contains(content, "EXPERIENCING") ||
-		 strings.Contains(content, "ELEVATED ERRORS"):
-		state = "service_issue"
-	case strings.Contains(content, "INVESTIGATING") || strings.Contains(content, "MONITORING"):
-		state = "service_issue"
-	}
-	
-	if state == "" {
-		return
-	}
-	
-	service = strings.TrimSpace(item.Title)
-	active = state != "resolved"
-	return
-}
